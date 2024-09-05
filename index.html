@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Génie ou Genius</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container game-container">
+        <img id="gameImage" src="" alt="Image de jeu" class="game-image">
+        <div id="buttonGroup" class="btn-group-custom">
+            <button type="button" class="btn btn-success" id="trueButton">
+                <img src="check-icon.png" alt="Vrai" width="20" height="20">
+                Genius
+            </button>
+            <button type="button" class="btn btn-danger" id="falseButton">
+                <img src="uncheck-icon.png" alt="Faux" width="20" height="20">
+                Génie
+            </button>
+        </div>
+        <div id="nameInputContainer" style="display: none;">
+            <input type="text" id="nameInput" placeholder="Entrez un prénom">
+            <button type="button" id="submitNameButton">Soumettre</button>
+        </div>
+        <div id="feedbackMessage" class="mt-3"></div>
+        <div id="score" class="mt-3">
+            <h3>Score: <span id="scoreValue">0</span></h3>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
